@@ -12,6 +12,14 @@ spring:
     show-sql: true  #是否显示sql语句
     generate-ddl: true #是否建表
     database: mysql  #底层数据库类型
+  zipkin:
+    base-url: http://127.0.0.1:9041
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
+
 
 #配置eureka客户端(单机版)
 eureka:
